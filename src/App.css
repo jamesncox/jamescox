@@ -7,7 +7,8 @@ body {
 }
 
 .App-header {
-  background-color: #1f283a8e;
+  background: rgb(0,89,250);
+  background: linear-gradient(308deg, rgba(0,89,250,0.7343312324929971) 2%, rgba(0,0,0,0.958420868347339) 100%);
   min-height: 100px;
   display: flex;
   flex-direction: column;
@@ -19,17 +20,17 @@ body {
 
 /* CSS for Navbar container */
 .navbar {
-  border-radius: .05in;
-  padding: 10px;
+  padding: 25px;
   overflow: hidden;
-  background-color:  rgba(0, 0, 0, 0.850);
+  background: rgb(0,30,85);
+  background: linear-gradient(317deg, rgba(0,30,85,0.8071603641456583) 20%, rgba(0,0,0,0.958420868347339) 58%);
   font-family: Arial;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 23px;
+  font-size: 25px;
   margin-top: 3px;
   color: white;
   text-align: center;
@@ -60,7 +61,7 @@ body {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #620074c7;
-  border-radius: .05in;
+  /* border-radius: .05in; */
 }
 
 /* Dropdown content (hidden by default) */
@@ -71,7 +72,7 @@ body {
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  border-radius: .05in;
+  /* border-radius: .05in; */
   padding: 10px;
 }
 
