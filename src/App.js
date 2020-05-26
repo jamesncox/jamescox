@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
-import NavBar from './components/NavBar'
+import Pages from './pages';
+// import './App.css';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route
+// } from 'react-router-dom';
+// import NavBar from './components/NavBar'
 
-function App(props) {
+function App() {
 
   const [user, setUser] = useState(null)
   useEffect(() => {
