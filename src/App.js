@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -8,6 +8,21 @@ import {
 import NavBar from './components/NavBar'
 
 function App(props) {
+
+  const [user, setUser] = useState(null)
+  useEffect(() => {
+    fetch("https://gitconnected.com/v1/portfolio/jamesncox")
+      .then(res => res.json())
+      .then(user => {
+        setUser(user)
+      })
+  }, [])
+
+  if (!user) {
+    return <div />
+  }
+
+  return <Pages user={user} />
   // let tabButtons = document.querySelectorAll(".tab-container .button-container button")
   // let tabPanels = document.querySelectorAll(".tab-container .tab-panel")
 
@@ -28,11 +43,11 @@ function App(props) {
 
   // showPanel(0, '#f44336')
 
-  return (
-    <Router>
-      <div className="App">
+  // return (
+  //   <Router>
+  //     <div className="App">
 
-        {/* <div className="tab-container">
+  {/* <div className="tab-container">
           <div className="button-container">
             <button onClick={showPanel(0, '#f44336')}> Tab 1</button>
             <button onClick={showPanel(1, '#4caf50')}> Tab 2</button>
@@ -47,13 +62,13 @@ function App(props) {
 
 
 
-        {/* <NavBar /> */}
-        {/* <header className="App-header">
+  {/* <NavBar /> */ }
+  {/* <header className="App-header">
           <h1>James Cox</h1>
         </header> */}
-      </div >
-    </Router >
-  );
+  //     </div >
+  //   </Router >
+  // );
 }
 
 export default App;
