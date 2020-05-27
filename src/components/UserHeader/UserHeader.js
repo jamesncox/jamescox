@@ -13,7 +13,7 @@ const UserHeader = ({ user }) => {
                 <Image src={user.basics.picture} />
                 <div>
                     <h2>{user.basics.name}</h2>
-                    <h4>
+                    {/* <h4>
                         <a
                             href={`https://gitconnected.com/${user.basics.username}`}
                             target="_blank"
@@ -21,17 +21,17 @@ const UserHeader = ({ user }) => {
                         >
                             @{user.basics.username}
                         </a>
-                    </h4>
+                    </h4> */}
                     <p>{user.basics.label}</p>
                     <p>Coding in {user.basics.region}</p>
                     <p>{user.basics.yearsOfExperience} years of experience as a developer</p>
                     <p>{user.basics.headline}</p>
-                    <p>
+                    {/* <p>
                         Blog:{' '}
                         <a href={user.basics.blog} target="_blank" rel="noreferrer noopener">
                             {user.basics.blog}
                         </a>
-                    </p>
+                    </p> */}
                 </div>
             </Header>
             <div>

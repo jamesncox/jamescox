@@ -28,6 +28,7 @@ export const ViewResumeLink = styled.a`
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
+  font-size: 20px;
   align-items: center;
   margin-top: 1rem;
   border: 2px solid #2ecc40;
@@ -37,7 +38,7 @@ export const ViewResumeLink = styled.a`
     background-color: #2ecc40;
   }
   svg {
-    fill: white;
-    margin-left: 8px;
+    fill: black;
+    margin-left: 15px;
   }
 `;
