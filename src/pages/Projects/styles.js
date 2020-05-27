@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { white } from '@carbon/colors'
+import { black } from '@carbon/colors'
 
 export const ProjectItem = styled.li`
   margin-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid ${white};
+  border-bottom: 1px solid ${black};
 `
 
 export const ProjectTitle = styled.h4`

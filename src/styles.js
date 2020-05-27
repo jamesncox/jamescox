@@ -16,9 +16,9 @@ export const Pill = styled.span`
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
   padding: 0.5rem 1rem;
-  background-color: ${blue[20]};
+  background-color: ${blue[0]};
   color: ${blue[70]};
-  border: 3px solid ${blue[70]};
+  border: 1px solid ${blue[70]};
   border-radius: 2px;
-  font-weight: bold;
+  // font-weight: bold;
 `;

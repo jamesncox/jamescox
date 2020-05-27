@@ -12,7 +12,8 @@ const Projects = ({ user }) => {
                     {user.projects.map((project, i) => (
                         <ProjectItem key={i}>
                             <ProjectTitle>{project.name}</ProjectTitle>
-                            <a href={project.website}>{project.website}</a>
+                            <a href={project.website}>{project.website}</a><br></br>
+                            <a href={project.githubUrl}>{project.githubUrl}</a>
                             <p>{project.summary}</p>
                             <SkillContainer>
                                 {[...project.languages, ...project.libraries].map((item, j) => (
