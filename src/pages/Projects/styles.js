@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { black } from '@carbon/colors'
+import { black, blue } from '@carbon/colors'
 
 export const ProjectItem = styled.li`
   margin-top: 1rem;
@@ -14,3 +14,9 @@ export const ProjectTitle = styled.h4`
 export const SkillContainer = styled.div`
   margin-top: 1.2rem;
 `
+
+export const LinkHover = styled.a`
+  &:hover {
+    fill: ${blue[60]};
+  }
+`;

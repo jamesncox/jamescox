@@ -1,5 +1,6 @@
 
 import styled from 'styled-components';
+import { blue } from '@carbon/colors';
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -40,5 +41,11 @@ export const ViewResumeLink = styled.a`
   svg {
     fill: black;
     margin-left: 15px;
+  }
+`;
+
+export const LinkHover = styled.a`
+  &:hover {
+    color: ${blue[60]};
   }
 `;
