@@ -29,23 +29,33 @@ export const ViewResumeLink = styled.a`
   text-decoration: none;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   align-items: center;
   margin-top: 1rem;
-  border: 2px solid #2ecc40;
-  background-color: rgba(46, 204, 64, 0.3);
+  border: 2px solid  ${blue[50]};
+  background-color: ${blue[10]};
   transition: background-color 250ms ease;
   &:hover {
-    background-color: #2ecc40;
+    background-color: ${blue[50]};
   }
   svg {
     fill: black;
     margin-left: 15px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 15px;
+    padding: 0.5rem 1.0rem;
+    width: 50%;
   }
 `;
 
 export const LinkHover = styled.a`
   &:hover {
     color: ${blue[60]};
+  }
+
+  @media (max-width: 640px) {
+   display: none;
   }
 `;

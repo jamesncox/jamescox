@@ -13,14 +13,14 @@ const UserHeader = ({ user }) => {
                 <Image src={user.basics.picture} />
                 <div>
                     <h2>{user.basics.name}{' '}
-                    (<LinkHover
+                        <LinkHover
                             href={`https://gitconnected.com/${user.basics.username}`}
                             target="_blank"
                             rel="noreferrer noopener"
                             style={{ textDecoration: "none" }}
                         >
                             @{user.basics.username}
-                        </LinkHover>)
+                        </LinkHover>
                     </h2>
                     <p>{user.basics.label}</p>
                     <p>Coding in {user.basics.region}</p>
