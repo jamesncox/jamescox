@@ -1,0 +1,23 @@
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    color: #3B5998;
+    background: white;
+}
+
+.fa-linkedin {
+    color: #007bb5;
+    background: white;
+}
+
+.fa-twitter {
+    color: #55ACEE;
+    background: white;
+  }
+
+  .fa-youtube {
+    color: #bb0000;
+    background: white;
+  }

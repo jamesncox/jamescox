@@ -19,7 +19,7 @@ const UserHeader = ({ user }) => {
                             rel="noreferrer noopener"
                             style={{ textDecoration: "none" }}
                         >
-                            @{user.basics.username}
+                            (@{user.basics.username})
                         </LinkHover>
                     </h2>
                     <p>{user.basics.label}</p>
