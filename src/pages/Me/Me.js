@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Paragraph, Pill } from '../../styles';
-import { ProfileLink, LinkHover, IconList } from './styles';
+import { IconList } from './styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Me = ({ user }) => {

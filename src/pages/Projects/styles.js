@@ -20,3 +20,17 @@ export const LinkHover = styled.a`
     fill: ${blue[60]};
   }
 `;
+
+export const IconList = styled.a`
+  display: inline-block;
+  paddin-bottom: 5px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: -15px;
+  &:hover {
+    opacity: 0.8;
+    color: ${blue[60]};
+  }
+`
