@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { ArrowRight16 } from '@carbon/icons-react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import { HeaderContainer, Header, Image, ViewResumeLink, LinkHover } from './styles';
 
@@ -26,12 +26,6 @@ const UserHeader = ({ user }) => {
                     <p>Coding in {user.basics.region}</p>
                     <p>{user.basics.yearsOfExperience} years of experience as a developer</p>
                     <p>{user.basics.headline}</p>
-                    {/* <p>
-                        Blog:{' '}
-                        <a href={user.basics.blog} target="_blank" rel="noreferrer noopener">
-                            {user.basics.blog}
-                        </a>
-                    </p> */}
                 </div>
             </Header>
             <div>
@@ -41,7 +35,7 @@ const UserHeader = ({ user }) => {
                     rel="noopener noreferrer"
                 >
                     <span>View Resume</span>
-                    <ArrowRight16 />
+                    <FontAwesomeIcon style={{ fontSize: "20px" }} icon="arrow-circle-right" />
                 </ViewResumeLink>
             </div>
         </HeaderContainer>

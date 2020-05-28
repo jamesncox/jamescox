@@ -1,13 +1,11 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-// import { Code24, Wikis24 } from '@carbon/icons-react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { SectionTitle, Pill } from '../../styles';
+import { SectionTitle, ProjectPill } from '../../styles';
 import { ProjectItem, ProjectTitle, SkillContainer, IconList } from './styles';
 
 const Projects = ({ user }) => {
     return (
-        console.log(user.projects),
         < Layout user={user} >
             <div>
                 <SectionTitle>Projects</SectionTitle>
@@ -29,12 +27,11 @@ const Projects = ({ user }) => {
                                 >
                                     <FontAwesomeIcon icon={['fab', 'github']} />
                                 </IconList>
-                                {/* <LinkHover href={project.githubUrl} style={{ marginLeft: "10px" }}><Code24 /></LinkHover> */}
                             </ProjectTitle>
                             <p>{project.summary}</p>
                             <SkillContainer>
                                 {[...project.languages, ...project.libraries].map((item, j) => (
-                                    <Pill key={j}>{item}</Pill>
+                                    <ProjectPill key={j}>{item}</ProjectPill>
                                 ))}
                             </SkillContainer>
                             {/* {[...project.images].map(image => (

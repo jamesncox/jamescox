@@ -31,7 +31,7 @@ export const ViewResumeLink = styled.a`
   font-weight: bold;
   font-size: 18px;
   align-items: center;
-  margin-top: 1rem;
+  // margin-top: 1rem;
   border: 2px solid  ${blue[50]};
   background-color: ${blue[10]};
   transition: background-color 250ms ease;
@@ -44,7 +44,8 @@ export const ViewResumeLink = styled.a`
   }
 
   @media (max-width: 640px) {
-    font-size: 15px;
+    margin-top: 1rem;
+    font-size: 16px;
     padding: 0.5rem 1.0rem;
     width: 50%;
   }

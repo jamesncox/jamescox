@@ -20,5 +20,19 @@ export const Pill = styled.span`
   color: ${blue[70]};
   border: 1px solid ${blue[20]};
   border-radius: 2px;
-  // font-weight: bold;
+  min-width: 100px;
+  @media (max-width: 640px) {
+    min-width: 31%;
+  }
+`;
+
+export const ProjectPill = styled.span`
+  display: inline-block;
+  margin-right: 0.50rem;
+  margin-bottom: 0.50rem;
+  padding: 0.5rem 1rem;
+  background-color: ${gray[10]};
+  color: ${blue[70]};
+  border: 1px solid ${blue[20]};
+  border-radius: 2px;
 `;
