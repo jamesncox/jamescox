@@ -4,9 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SectionTitle, ProjectPill } from '../../styles';
 import { ProjectItem, ProjectTitle, SkillContainer, IconList } from './styles';
 
+
+//user.projects[0].images[0].resolutions.mobile 
+// that format is how i access a photo
 const Projects = ({ user }) => {
     return (
-        < Layout user={user} >
+        <Layout user={user}>
             <div>
                 <SectionTitle>Projects</SectionTitle>
                 <ul>

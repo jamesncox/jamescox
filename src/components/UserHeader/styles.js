@@ -5,7 +5,7 @@ import { blue } from '@carbon/colors';
 export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 640px) {
+  @media (max-width: 880px) {
     display: ${({ isHome }) => (!isHome ? 'none' : 'flex')};
     flex-direction: column;
   }
@@ -44,7 +44,7 @@ export const ViewResumeLink = styled.a`
     margin-left: 15px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 880px) {
     margin-top: 1rem;
     font-size: 16px;
     padding: 0.5rem 1.0rem;
@@ -53,6 +53,7 @@ export const ViewResumeLink = styled.a`
 `;
 
 export const LinkHover = styled.a`
+  margin-right: 1rem;
   &:hover {
     color: ${blue[60]};
   }
