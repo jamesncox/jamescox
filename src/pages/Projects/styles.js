@@ -30,7 +30,6 @@ export const IconList = styled.a`
   text-decoration: none;
   margin-right: -15px;
   &:hover {
-    opacity: 0.8;
     color: ${blue[60]};
   }
 `

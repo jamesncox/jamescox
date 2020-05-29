@@ -20,7 +20,7 @@ const Me = ({ user }) => {
                 </div>
             </div>
             <div>
-                <SectionTitle>Profiles</SectionTitle>
+                <SectionTitle>Social</SectionTitle>
                 <IconList
                     href={"https://www.linkedin.com/in/jamesnathanielcox/"}
                     target="_blank"
@@ -49,13 +49,13 @@ const Me = ({ user }) => {
                 >
                     <FontAwesomeIcon icon={['fab', 'medium']} />
                 </IconList>
-                <IconList
+                {/* <IconList
                     href={"https://www.facebook.com/profile.php?id=38910177"}
                     target="_blank"
                     rel="noreferrer noopener"
                 >
                     <FontAwesomeIcon className="fa-facebook" icon={['fab', 'facebook-square']} />
-                </IconList>
+                </IconList> */}
                 <IconList
                     href={"https://www.youtube.com/channel/UCtTuWJ1C92ujcxAjmdptRog?view_as=subscriber"}
                     target="_blank"

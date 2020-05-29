@@ -22,6 +22,7 @@ export const Image = styled.img`
   width: 200px;
   margin-right: 1rem;
   border-radius: 2px;
+  object-fit: cover;
 `;
 
 export const ViewResumeLink = styled.a`

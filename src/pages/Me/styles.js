@@ -9,12 +9,17 @@ export const ProfileLink = styled.li`
 export const IconList = styled.a`
   display: inline-block;
   paddin-bottom: 5px;
-  font-size: 40px;
-  width: 40px;
+  font-size: 50px;
+  width: 45px;
   text-align: center;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 12px;
   &:hover {
     opacity: 0.7;
+  }
+  @media (max-width: 350px) {
+    font-size: 40px;
+    width: 40px;
+    margin-right: 5px;
   }
 `
